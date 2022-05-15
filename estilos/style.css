@@ -120,9 +120,9 @@ section img {
     transition: 2s;    
 }
 
-/* section img:hover{
+section img:hover{
     box-shadow: 0 0 30px;
-} */
+}
 
 .news div {
     margin-bottom: 15px;
@@ -146,10 +146,10 @@ section img {
 .teams div img{
     width: 150px;
     height: 150px;
-/*     transition: all 1s;
+    transition: all 1s;
 }
 .teams div img:hover{
-    transform: scale(1.5) translate(10px, 20px); */
+    transform: scale(1.5) translate(10px, 20px);
 }
 .teams{
     display: grid;
