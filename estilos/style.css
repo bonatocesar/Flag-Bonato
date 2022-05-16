@@ -19,9 +19,9 @@ body{
     top: 0;
     background-image: linear-gradient(135deg, #406882, #b1d0e0);
 }
-.hambur {
+/* .hambur {
     display: none;
-}
+} */
 
 header ul li a {
     text-decoration: none;
@@ -276,13 +276,18 @@ footer div p {
     }
 
     .menu{
-        display: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+            
+        /* display: none; */ 
     }
+    /*
     .hambur{
         display: flex;
         justify-content: flex-end;
         margin-right: 20px;
-    }
+    } */
     .section_inicio div{
         width: 500px;
     }
