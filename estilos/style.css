@@ -138,7 +138,7 @@ section img:hover{
 }
 
 /* Equipos */
-.teams div {
+/* .teams div {
     margin-bottom: 10px;
 }
 
@@ -156,7 +156,7 @@ section img:hover{
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     margin: 30px ;
-}
+} */
 
 /* Torneo */
 
@@ -167,15 +167,18 @@ section img:hover{
     margin:0 35px;
     line-height: 20px;
     font-size: 20px;
-    text-align: center;
-    
+    text-align: center;    
 }
-
-
 
 .section_torneo h2{
     padding: 15px 0;
 }
+
+.casousel-inner img{
+    max-height: 300px ;
+}
+
+
 
 /* Contacto */
 
@@ -299,13 +302,13 @@ footer div p {
 
     /* equipos */
 
-    .teams {
+   /*  .teams {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .teams div img:hover{
         transform: scale(1);
-    }
+    } */
 
     /* Torneo */
 
