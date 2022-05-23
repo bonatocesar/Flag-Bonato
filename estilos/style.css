@@ -23,6 +23,10 @@ body{
     display: none;
 } */
 
+.navbar-nav{
+    margin-left: auto;
+}
+
 header ul li a {
     text-decoration: none;
     font-family: sans-serif;
