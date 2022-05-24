@@ -1,339 +1,379 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body{
-    min-height: 100vh;
-    background-color: rgb(60,182,182);
-    display: grid;
-    grid-template-rows: auto 1fr auto; 
-    
+body {
+  min-height: 100vh;
+  background-color: #3cb6b6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
 }
 
 /* header */
-
-.cabecera{
-    position: sticky;
-    top: 0;
-    background-image: linear-gradient(135deg, #406882, #b1d0e0);
+.cabecera {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(135deg, #406882, #b1d0e0);
 }
+
 .hambur {
-    display: none;
-} 
+  display: none;
+}
 
 header ul li a {
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    padding: 30px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 30px;
 }
 
 .logo {
-    width: 100px;
-    padding: 10px;
-    
+  width: 100px;
+  padding: 10px;
 }
 
 header div h2 {
-    background-color: antiquewhite;
-    padding-left: 10px;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: end;
+  background-color: antiquewhite;
+  padding-left: 10px;
 }
 
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
 
 /* Main */
-
 main {
-    height: 500px;
-}
-h1{
-    text-align: center;
-    padding: 10px;
+  height: 500px;
 }
 
+h1 {
+  text-align: center;
+  padding: 10px;
+}
 
 /* inicio */
-
 .section_inicio {
-    padding: 20px 0;
-    width: 100%;
-    margin: 20px 50;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-    }
-
-.section_inicio div{
-    width: 700px;
-    padding: 55px
-} 
-.section_inicio div h4{
-    font-size: 27px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 10px;
+  padding: 20px 0;
+  width: 100%;
+  margin: 20px 50;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.section_inicio div p{
-    font-size:22px ;
-}   
+
+.section_inicio div {
+  width: 700px;
+  padding: 55px;
+}
+
+.section_inicio div h4 {
+  font-size: 27px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+}
+
+.section_inicio div p {
+  font-size: 22px;
+}
 
 iframe {
-    border: 4px solid black;
-    border-radius: 15px;
-    width: 400px;
-    height: 250px;
+  border: 4px solid black;
+  border-radius: 15px;
+  width: 400px;
+  height: 250px;
 }
 
 /* Noticias */
-
 .news {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    flex-wrap: wrap;
-}
-.news div{
-    padding: 0 30px;
-}
-.news div p{
-    font-size: 20px;
-}
-section img {
-    border: 4px solid black;
-    border-radius: 15px;
-    width: 400px;
-    height: 250px;
-    transition: 2s;    
-}
-
-section img:hover{
-    box-shadow: 0 0 30px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .news div {
-    margin-bottom: 15px;
+  padding: 0 30px;
 }
-.news div h4{
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.news div p {
+  font-size: 20px;
 }
+
+section img {
+  border: 4px solid black;
+  border-radius: 15px;
+  width: 400px;
+  height: 250px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+section img:hover {
+  -webkit-box-shadow: 0 0 30px;
+          box-shadow: 0 0 30px;
+}
+
+.news div {
+  margin-bottom: 15px;
+}
+
+.news div h4 {
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .news p {
-    width: 400px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+  width: 400px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
 }
 
 /* Equipos */
 .teams div {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
+.teams div img {
+  width: 150px;
+  height: 150px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
 
-.teams div img{
-    width: 150px;
-    height: 150px;
-    transition: all 1s;
+.teams div img:hover {
+  -webkit-transform: scale(1.5) translate(10px, 20px);
+          transform: scale(1.5) translate(10px, 20px);
 }
-.teams div img:hover{
-    transform: scale(1.5) translate(10px, 20px);
-}
-.teams{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    margin: 30px ;
+
+.teams {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 30px;
 }
 
 /* Torneo */
-
-
-.section_torneo{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin:0 35px;
-    line-height: 20px;
-    font-size: 20px;
-    text-align: center;
-    
+.section_torneo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 0 35px;
+  line-height: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 
-
-
-.section_torneo h2{
-    padding: 15px 0;
+.section_torneo h2 {
+  padding: 15px 0;
 }
 
 /* Contacto */
-
-
-
-.titulo_contact{
-    text-align: center;
-    font-size: 40px;
-    padding-top: 15px;
+.titulo_contact {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 15px;
 }
 
-form{
-    width: 400px;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
+form {
+  width: 400px;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-label{
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 30px;
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
 }
-input{
-    border: 2px solid black;
-    border-radius: 15px; 
-    height: 25px;
+
+input {
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 25px;
 }
-form select{
-    border: 2px solid black;
-    border-radius: 15px;
-    height: 25px;
+
+form select {
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 25px;
 }
+
 button {
-    margin-top: 20px;
-    margin-left: 230px;
-    border: 2px solid black;
-    border-radius: 15px; 
-    width: 70px;
-    font-weight: bold;
+  margin-top: 20px;
+  margin-left: 230px;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 70px;
+  font-weight: bold;
 }
 
-.section_contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin: 35px;
+.section_contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 35px;
 }
+
 .section_beneficios {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
 }
+
 .section_beneficios h3 {
-    font-size: 25px;
-    margin: 20px 20px;
+  font-size: 25px;
+  margin: 20px 20px;
 }
 
 .p_contacto {
-    width: 100%;
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 
 /* footer */
 footer {
-    width: 100%;
-    background-color: gray;
-    height: 120px;
-    display: flex;
-    justify-content: space-evenly;
-    
+  width: 100%;
+  background-color: gray;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
+
 footer div {
-    padding: 15px;
-    text-align: center;    
+  padding: 15px;
+  text-align: center;
 }
 
 footer div p {
-    padding: 10px;
+  padding: 10px;
 }
-
 
 /* Media Querys */
-
-@media screen and (max-width:767px) {
-    .section_inicio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;       
-    }
-    section img:hover{
-        box-shadow: none;
-    }
-    .video_inicio{
-        display: none;
-    }
-
-    .menu{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-            
-        display: none; 
-    }
-    
-    .hambur{
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 20px;
-    } 
-    .section_inicio div{
-        width: 500px;
-    }
-    footer{
-        position: absolute;
-        bottom: 0;
-        width: 100vw;
-    }
-
-    /* equipos */
-
-    .teams {
-        display: grid;
+@media screen and (max-width: 767px) {
+  .section_inicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  section img:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .video_inicio {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .hambur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 20px;
+  }
+  .section_inicio div {
+    width: 500px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+  }
+  /* equipos */
+  .teams {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    }
-    .teams div img:hover{
-        transform: scale(1);
-    }
-
-    /* Torneo */
-
-
-    
-
-    /* contacto */
-
-    .section_contact {
-        display: grid;
+  }
+  .teams div img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  /* Torneo */
+  /* contacto */
+  .section_contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-    }
-
-    .section_beneficios h3{
-        text-align: center;
-    }
-    .p_contacto {
-        text-align: center;
-        width: 500px;
-    }
-
-    .section_beneficios{
-        width: auto;
-        margin-left: 35px;
-    }
-
-        
-    
-
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section_beneficios h3 {
+    text-align: center;
+  }
+  .p_contacto {
+    text-align: center;
+    width: 500px;
+  }
+  .section_beneficios {
+    width: auto;
+    margin-left: 35px;
+  }
 }
+/*# sourceMappingURL=style.css.map */
