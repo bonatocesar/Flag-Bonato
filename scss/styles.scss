@@ -1,0 +1,18 @@
+
+$font: sans-serif;
+
+nav{
+    .menu{
+        li{
+            a{
+            color: purple;
+            text-decoration: none;
+            font-family: $font;
+            font-size: 20px;
+            font-weight: 900;
+            padding: 30px;
+            
+            }
+        }
+    }
+}
