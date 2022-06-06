@@ -1,11 +1,55 @@
 
 $font: sans-serif;
+$color: green;
+
+/* Maps */
+
+$Teams:(
+    conquis: red,
+    tejones: blue,
+    elrayo: black,
+    gárgolas: green,
+    panteras: rgb(236, 226, 226),
+    bulls: rgb(31, 194, 200),
+    );
+
+    @each $team, $color in $Teams {
+        .btn--#{$team} {
+            background-color: $color;
+        }
+        
+    }
+
+
+/* Extend */
+
+.teamsButton{
+    width: 120px;
+}
+
+.teams div input {
+    @extend.teamsButton;
+}
+
+
+/* Mixin */
+
+@mixin sizes ($weight, $style) {
+    font-weight: $weight;
+    font-style: $style;
+}
+    .teams div input {
+        @include sizes (bold, italic) 
+    }
+    
+
+
 
 nav{
     .menu{
         li{
             a{
-            color: purple;
+            color: rgb(142, 27, 25);
             text-decoration: none;
             font-family: $font;
             font-size: 20px;
@@ -16,3 +60,32 @@ nav{
         }
     }
 }
+
+.teams{
+    div{
+        margin-bottom: 10px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.5) translate(10px, 20px);
+        }
+    }
+}
+
+footer{
+    div{
+        padding: 15px;
+        text-align: center;
+        h4{
+            font-size: 20px;
+        }
+        p{
+            padding: 10px;
+            font-family: $font;
+            color: goldenrod
+        }
+    }
+} 

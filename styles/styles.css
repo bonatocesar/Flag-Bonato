@@ -1,8 +1,76 @@
+@charset "UTF-8";
+/* Maps */
+.btn--conquis {
+  background-color: red;
+}
+
+.btn--tejones {
+  background-color: blue;
+}
+
+.btn--elrayo {
+  background-color: black;
+}
+
+.btn--gárgolas {
+  background-color: green;
+}
+
+.btn--panteras {
+  background-color: #ece2e2;
+}
+
+.btn--bulls {
+  background-color: #1fc2c8;
+}
+
+/* Extend */
+.teamsButton, .teams div input {
+  width: 120px;
+}
+
+/* Mixin */
+.teams div input {
+  font-weight: bold;
+  font-style: italic;
+}
+
 nav .menu li a {
-  color: purple;
+  color: #8e1b19;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 20px;
   font-weight: 900;
   padding: 30px;
+}
+
+.teams div {
+  margin-bottom: 10px;
+}
+
+.teams img {
+  width: 150px;
+  height: 150px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.teams img:hover {
+  -webkit-transform: scale(1.5) translate(10px, 20px);
+          transform: scale(1.5) translate(10px, 20px);
+}
+
+footer div {
+  padding: 15px;
+  text-align: center;
+}
+
+footer div h4 {
+  font-size: 20px;
+}
+
+footer div p {
+  padding: 10px;
+  font-family: sans-serif;
+  color: goldenrod;
 }
