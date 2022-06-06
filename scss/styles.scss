@@ -6,7 +6,7 @@ $color: green;
 
 $Teams:(
     conquis: red,
-    tejones: blue,
+    tejones: rgb(33, 33, 150),
     elrayo: black,
     gárgolas: green,
     panteras: rgb(236, 226, 226),
@@ -34,12 +34,13 @@ $Teams:(
 
 /* Mixin */
 
-@mixin sizes ($weight, $style) {
+@mixin sizes ($weight, $style, $color) {
     font-weight: $weight;
     font-style: $style;
+    color: $color;
 }
     .teams div input {
-        @include sizes (bold, italic) 
+        @include sizes (bold, italic, rgb(84, 80, 80)) 
     }
     
 
