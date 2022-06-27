@@ -7,26 +7,32 @@
     <meta name="description" content="Noticias en el mundo del Football de Buenos Aires">
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FlagBA - Noticias</title>
 </head>
 <body>
 
     <header class="cabecera"> 
         <div class="navbar">
-            <img class="logo" src="../img/logoflag.JPG" alt="logo">
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
+                
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn"> 
+                        <i class="fas fa-bars"></i>            
+                    </label>
+            
+                    <img class="logo" src="../img/logoflag.JPG" alt="logo">
+                    
+                    <ul class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./noticias.html">Noticias</a></li>
                     <li><a href="./equipos.html">Equipos</a></li>
                     <li><a href="./torneos.html">Torneo</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
-                    
-                </ul>
-            </nav>
-            <img class="hambur" src="../img/logo futbol-americano.png" alt="logopelota" width="50px" > 
+                    </ul>
+                
         </div>
-        
 
         <div>
             <h2>Noticias</h2>
@@ -38,40 +44,49 @@
     <main >
         <section class="news">
             <div>
-                <img src="../img/ConquisGargolas.JPG" alt="news1">
+                <img src="../img/03 Conquistadores vs Tejones (69).jpg" alt="news1">
                 <h4>Conquis vs Tejones</h4>
-                <p>Conquistadores jugó mal, pero ganó, con una ofenciva que tiene que ser para el olvido, fueron los defensores los que llevaron al equipo a ganar! Mientras que Tejones, tuvo un buen partido, pero la derrota se les dio por la cantidad de jugadores nuevos que tiene, tienen futuro!</p>
+                <p>Conquistadores jugó mal, pero ganó, con una ofenciva que tiene que ser para el olvido, fueron los defensores los que llevaron al equipo a ganar! Mientras que Tejones, tuvo un buen partido, pero la derrota se les dio por la cantidad de jugadores nuevos que tiene, tienen futuro! <br>   La racha del último campeón no tiene límites, aún jugando mal, demuestran en cada fecha la solidez de cada una de sus posiciones dentro de la cancha, en donde se aferran mas y mas a medida que la historia avanza.</p>
             </div>
         
 
             <div>
-                <img src="../img/rayotejones.JPG" alt="news2">
-                <h4>El Rayo vs Gárgolas</h4>
-                <p>En un partido vibrante... El Rayo se impuso con lo justo ante un Gárgolas que está con jugadores nuevos y adaptándose a un equipo que venía muy pobre en torneos pasados.</p>
+                <img src="../img/02 Bulls vs Gargolas (72).jpg" alt="news2">
+                <h4>Bulls vs Gárgolas</h4>
+                <p>En un partido vibrante... Bulls se impuso con lo justo ante un Gárgolas que está con jugadores nuevos y adaptándose a un equipo que venía muy pobre en torneos pasados.</p>
             </div>
         
 
             <div>
-                <img src="../img/ConquisGargolas.JPG" alt="news1">
-                <h4>Panteras vs Bulls</h4>
-                <p>En el primer partido para ambos equipos, nuevos en la franquisia, quienes mejores empezaron, fueron los Bulls, que apabullaron a un Panteras que se está armando todavía y tienen mucho que practicar</p>
+                <img src="../img/01 El Rayo vs Panteras (57).jpg" alt="news1">
+                <h4>El Rayo vs Panteras</h4>
+                <p>El Rayo no tuvo piedad ante uno de los equipos que se fundaron para este torneo y que todavía siguen conociendose entre sus integrantes. <br> La experiencia del Rayo se notó en la solidez de sus jugadores, que ya vienen teniendo rodaje desde hace tres años. <br> Sabemos que Panteras se está armando y consolidando, aunque esto seguro lleve tiempo.</p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <h4>Contactos</h4>
-            <p>Email: flag@flag.com</p>
-            <p>Tel: 1515151515</p>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>Liga que hoy día se desempeña en San Isidro, Club de Deportes Marín.</p>
+                <p>Ante cualquier duda escribinos al: flagba@flagba.com.ar</p>
+            </div>
+            <div class="box">
+                <h2>Redes Sociales</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/watch/?extid=NS-UNK-UNK-UNK-IOS_GK0T-GK1C&v=164409642535700" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/flagfootballbaff/?hl=es-la" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <h4>Redes Sociales</h4>
-            <p>Instagram</p>
-            <p>Facebook</p>
+    
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>FlagBA</b> - Todos los derechos Reservados.</small>
         </div>
-    </footer>
+       </footer>
     
 </body>
 </html>

@@ -7,34 +7,41 @@
     <meta name="description" content="Tabla de posiciones del torneo Football Flag de Buenos Aires.">
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FlagBA - Torneos</title>
 </head>
 <body>
 
     <header class="cabecera"> 
-
         <div class="navbar">
-            <img class="logo" src="../img/logoflag.JPG" alt="logo">
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
+                
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn"> 
+                        <i class="fas fa-bars"></i>            
+                    </label>
+            
+                    <img class="logo" src="../img/logoflag.JPG" alt="logo">
+                    
+                    <ul class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./noticias.html">Noticias</a></li>
                     <li><a href="./equipos.html">Equipos</a></li>
                     <li><a href="./torneos.html">Torneo</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
-                    
-                </ul>
-            </nav>
-            <img class="hambur" src="../img/logo futbol-americano.png" alt="logopelota" width="50px" >
+                    </ul>
+                
         </div>
 
         <div>
             <h2>Torneo</h2>
         </div>
 
+        
     </header>
     
-    <main>
+    <main class="main_torneo">
         <section class="section_torneo">
             <h2>Fechas y posiciones</h2>
     
@@ -49,7 +56,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="background-color: red;"><strong>
+                        <tr style="background-color: rgb(228, 115, 115);"><strong>
                             <td>1</td>
                             <td><strong>Conquistadores</strong></td>
                             <td>6</td>
@@ -91,25 +98,96 @@
                             <td>1</td>
                             <td>5</td>
                         </tr>
-                    </tbody>
-                    
+                    </tbody>                    
                 </table>
+        </section>
+
+        <section class="resultados">
+            <div>
+                <h4>Fecha 1</h4>
+                <p>Conquistadores: <br> Tejones: </p>
+                <p>El Rayo: <br> Gárgolas:</p>
+                <p>Panteras: <br> Bulls:</p>
+            </div>
+            <div>
+                <h4>Fecha 2</h4>
+                <p>Panteras: <br> Gárgolas:</p>
+                <p>Conquistadores: <br> Bulls:</p>
+                <p>El Rayo: <br> Tejones:</p>
+            </div>
+            <div>
+                <h4>Fecha 3</h4>
+                <p>Bulls: <br> El Rayo:</p>
+                <p>Tejones: <br> Panteras:</p>
+                <p>Conquistadores: <br> Gárgolas:</p>
+            </div>
+            <div>
+                <h4>Fecha 4</h4>
+                <p>Conquistadores: <br> El Rayo:</p>
+                <p>Gárgolas: <br> Tejones:</p>
+                <p>Panteras: <br> Bulls:</p>
+            </div>
+            <div>
+                <h4>Fecha 5</h4>
+                <p>Tejones: <br> Bulls:</p>
+                <p>Conquistadores: <br> Panteras:</p>
+                <p>El Rayo: <br> Gárgolas:</p>
+            </div>
+            <div>
+                <h4>Fecha 6</h4>
+                <p>Tejones: <br> Conquistadores:</p>
+                <p>Gárgolas: <br>El Rayo:</p>
+                <p>Bulls: <br> Panteras:</p>
+            </div>
+            <div>
+                <h4>Fecha 7</h4>
+                <p>Gárgolas: <br> Panteras:</p>
+                <p>Bulls: <br> Conquistadores:</p>
+                <p>Tejones: <br> El Rayo:</p>
+            </div>
+            <div>
+                <h4>Fecha 8</h4>
+                <p>El Rayo: <br> Bulls:</p>
+                <p>Panteras: <br> Tejones:</p>
+                <p>Gárgolas: <br> Conquistadores:</p>
+            </div>
+            <div>
+                <h4>Fecha 9</h4>
+                <p>El Rayo: <br> Conquistadores:</p>
+                <p>Tejones: <br> Gárgolas:</p>
+                <p>Bulls: <br> Panteras:</p>
+            </div>
+            <div>
+                <h4>Fecha 10</h4>
+                <p>Bulls: <br> Tejones:</p>
+                <p>Panteras: <br> Conquistadores:</p>
+                <p>Gárgolas: <br> El Rayo:</p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <h4>Contactos</h4>
-            <p>Email: flag@flag.com</p>
-            <p>Tel: 1515151515</p>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>Liga que hoy día se desempeña en San Isidro, Club de Deportes Marín.</p>
+                <p>Ante cualquier duda escribinos al: flagba@flagba.com.ar</p>
+            </div>
+            <div class="box">
+                <h2>Redes Sociales</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/watch/?extid=NS-UNK-UNK-UNK-IOS_GK0T-GK1C&v=164409642535700" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/flagfootballbaff/?hl=es-la" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <h4>Redes Sociales</h4>
-            <p>Instagram</p>
-            <p>Facebook</p>
+    
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>FlagBA</b> - Todos los derechos Reservados.</small>
         </div>
-    </footer>
+       </footer>
     
 </body>
 </html>

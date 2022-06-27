@@ -8,23 +8,30 @@
     <meta name="keywords" content="Football Flag, futbol americano argentina, Baff, liga de flag argentina ">
     <link rel="stylesheet" href="./estilos/style.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FlagBA - Inicio</title>
 </head>
 <body>
-    <header class="cabe cera"> 
+    <header class="cabecera"> 
         <div class="navbar">
-            <img class="logo" src="./img/logoflag.JPG" alt="logo">
+                
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn"> 
+                        <i class="fas fa-bars"></i>            
+                    </label>
             
-            <nav>
-                <ul class="menu">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./secciones/noticias.html">Noticias</a><li>
-                    <li><a href="./secciones/equipos.html">Equipos</a></li>
-                    <li><a href="./secciones/torneos.html">Torneo</a></li>
-                    <li><a href="./secciones/contacto.html">Contacto</a></li>                    
-                </ul>
-            </nav>
-            <img class="hambur" src="./img/logo futbol-americano.png" alt="logopelota" width="50px" > 
+                    <img class="logo" src="./img/logoflag.JPG" alt="logo">
+                    
+                    <ul class="menu">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./secciones/noticias.html">Noticias</a></li>
+                        <li><a href="./secciones/equipos.html">Equipos</a></li>
+                        <li><a href="./secciones/torneos.html">Torneo</a></li>
+                        <li><a href="./secciones/contacto.html">Contacto</a></li>
+                    </ul>
+                
         </div>
 
         <div>
@@ -36,15 +43,15 @@
 
     <main>
         
-
+        <div class="inicio_titulo">
         <h1>BA Flag Football American</h1>
+    </div>
         <section class="section_inicio">
             <div>
                 <h4>Nuestro Deporte</h4>
                 <p>El flag football es una modalidad del football americano que se juega sin contacto en el cual los jugadores llevan dos banderas (flags) en la cintura (una de cada lado) donde el "tackle" queda representado al arrancar uno de ellos. <br>
                     Este deporte se practica entre hombres y mujeres ya sea que se hagan los equipos del mismo sexo o en su caso sea un equipo mixto. Aquí no hay protección alguna como hombreras, cascos, etc. Sin embargo, no deja de ser apasionante y con mucha adrenalina para quien lo juega, porque también se requiere mucha destreza y habilidad.
                     Suele jugarse 5vs5, 7vs7 y 9vs9
-
                 </p>
             </div>
     
@@ -57,19 +64,28 @@
 
     </main>
 
-    <footer>
-        <div>
-            <h4>Contactos</h4>
-            <p>Email: flag@flag.com</p>
-            <p>Tel: 1515151515</p>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>Liga que hoy día se desempeña en San Isidro, Club de Deportes Marín.</p>
+                <p>Ante cualquier duda escribinos al: flagba@flagba.com.ar</p>
+            </div>
+            <div class="box">
+                <h2>Redes Sociales</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/watch/?extid=NS-UNK-UNK-UNK-IOS_GK0T-GK1C&v=164409642535700" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/flagfootballbaff/?hl=es-la" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <h4>Redes Sociales</h4>
-            <p>Instagram</p>
-            <p>Facebook</p>
+    
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>FlagBA</b> - Todos los derechos Reservados.</small>
         </div>
-    </footer>
+       </footer>
 
 
 </body>
