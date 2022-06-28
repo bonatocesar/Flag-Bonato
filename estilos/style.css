@@ -15,9 +15,6 @@ display: grid;
 grid-template-rows: auto 1fr auto; 
 }
 
-
-/* header */
-
 .logo {
   width: 100px;
   padding: 10px;
@@ -55,7 +52,6 @@ grid-template-rows: auto 1fr auto;
   padding: 3px;
 }
 li a:hover{
-  /* background-color: rgb(129, 41, 41); */
   background-color: rgb(164, 104, 104);
   border-radius: 5px;
   transition: .5s;
@@ -78,13 +74,10 @@ header div h2 {
 } 
 
 
-
-/* Main */
 main {
   background-color: #4a9f9f ;
 }
 
-/* inicio */
 
 .inicio_titulo{
   width: 100%;
@@ -93,17 +86,23 @@ main {
  background-repeat: no-repeat;
  background-size: cover;
  border-bottom: 1px solid black;
+ 
+
 }
 
 h1{
   text-align: center;
   padding-top: 10px;
-  width: 100%;  
+  width: 100%; 
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
 }
+
 
 .section_inicio {
   padding: 20px 0;
   width: 100%;
+  min-width: 528px;
   margin: 50px 50;
   font-family: sans-serif;
   font-weight: bold;
@@ -137,8 +136,8 @@ iframe {
   margin-top: 63px;
 }
 
-/* Noticias */
 .news {
+  min-width: 528px;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -186,7 +185,6 @@ section img:hover {
   font-size: 15px;
 }
 
-/* Equipos */
 
 .teams div img {
   width: 150px;
@@ -195,17 +193,13 @@ section img:hover {
   transition: all 1s;
 }
 
-.teams div img:hover {
- /*  -webkit-transform: scale(1.5) translate(10px, 20px); */
-          /* transform: scale(1.5) translate(10px, 20px); */
-}
 
 .teams {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  margin: 30px;
-  margin-bottom: 90px;
+  margin: 90px;
+  margin-bottom: 90px auto;
 }
 
 .teams input{
@@ -214,7 +208,7 @@ section img:hover {
 
 
 
-/* Torneo */
+
 .main_torneo{
   width: 100%;
 }
@@ -233,10 +227,10 @@ section img:hover {
 }
 
 .resultados{
-  margin: 70px 100px;
+  margin: 70px 80px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 .resultados div{
   background-color: rgb(208, 200, 200, 0.6);
@@ -249,7 +243,7 @@ section img:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Contacto */
+
 .titulo_contact {
   text-align: center;
   font-size: 40px;
@@ -257,7 +251,7 @@ section img:hover {
 }
 
 form {
-  /* width: 400px; */
+
   width: 50%;
   margin-left: 100px;
   display: -webkit-box;
@@ -314,6 +308,7 @@ button {
 .section_beneficios h3 {
   font-size: 25px;
   margin: 20px 20px;
+  text-align: center;
 }
 
 .p_contacto {
@@ -322,7 +317,6 @@ button {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* footer */
 .pie-pagina {
   width: 100%;
 }
@@ -356,12 +350,10 @@ button {
   background-color: rgb(236, 218, 218);
   border-radius: 5px;
   margin: 0 5px;
-  /* text-align: center;
-  line-height: 25px; */
-
+  
 }
 
-/* Media Querys */
+
 @media screen and (min-width: 768px) and (max-width:1023px) {
 .resultados{
   display: grid;
@@ -437,16 +429,13 @@ button {
             align-items: center;
     text-align: center;
   }
-  section img:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
+  
   .video_inicio {
     display: none;
   }
   
   .section_inicio div {
-    width: 500px;
+    width: 100%;
   }
   .grupo-1{
     width: 100% ;
@@ -456,17 +445,13 @@ button {
   grid-template-columns: repeat(2, 1fr);
 }
 
-  /* equipos */
+
   .teams {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 70px;
   }
-  .teams div img:hover {
-    transform: scale(1);
-  }
-  /* Torneo */
-  /* contacto */
+  
 
   .section_contact {
     display: grid;
@@ -494,4 +479,5 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 
-/*# sourceMappingURL=style.css.map */
+}
+

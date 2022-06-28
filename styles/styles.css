@@ -52,13 +52,6 @@ nav .menu li a {
 .teams img {
   width: 150px;
   height: 150px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.teams img:hover {
-  /* -webkit-transform: scale(1.5) translate(10px, 20px);
-          transform: scale(1.5) translate(10px, 20px); */
 }
 
 footer div {
@@ -74,3 +67,4 @@ footer div p {
   padding: 10px;
   font-family: sans-serif;
 }
+
