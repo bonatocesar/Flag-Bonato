@@ -196,8 +196,8 @@ section img:hover {
 }
 
 .teams div img:hover {
-  -webkit-transform: scale(1.5) translate(10px, 20px);
-          transform: scale(1.5) translate(10px, 20px);
+ /*  -webkit-transform: scale(1.5) translate(10px, 20px); */
+          /* transform: scale(1.5) translate(10px, 20px); */
 }
 
 .teams {
