@@ -398,7 +398,7 @@ button {
 }
 
 
-@media screen and (max-width: 767px) {
+@media  (max-width: 767px) {
   .checkbtn{
     display: block;
     margin-right: 40px;
@@ -460,6 +460,7 @@ button {
   .teams {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
   }
   .teams div img:hover {
     transform: scale(1);
